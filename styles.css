@@ -48,6 +48,8 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
+[hidden] { display: none !important; }
+
 html { -webkit-text-size-adjust: 100%; }
 
 body {
@@ -287,3 +289,25 @@ th { font-weight: 600; }
 .doc h2 { font-size: 1.3rem; line-height: 1.3; margin: 2.25rem 0 0.6rem; }
 .doc li { margin-bottom: 0.45rem; }
 .doc table { min-width: 30rem; }
+
+/* TikTok sign-in pages */
+
+.connect .button { margin: 0.5rem 0 1.25rem; }
+.connect code { white-space: normal; }
+
+.who { display: flex; align-items: center; gap: 1rem; margin: 0 0 1.5rem; }
+.who img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; background: var(--line); }
+.who strong { display: block; font-size: 1.1rem; }
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+  gap: 1rem;
+  margin: 0 0 0.75rem;
+}
+
+.facts div { border-left: 3px solid var(--audio); padding: 0.15rem 0 0.15rem 0.8rem; }
+.facts dt { color: var(--muted); font-size: 0.95rem; }
+.facts dd { margin: 0; font-family: 'Anybody', sans-serif; font-stretch: 115%; font-weight: 700; font-size: 1.35rem; }
+
+.recent { padding-left: 1.2rem; }
